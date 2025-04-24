@@ -1,48 +1,98 @@
 
-import { Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-muted py-10">
-      <div className="container grid gap-8 md:grid-cols-4">
-        <div className="space-y-4">
-          <div className="flex items-center gap-2">
-            <Rocket className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">Poehali.dev</span>
+    <footer className="bg-muted py-12">
+      <div className="container">
+        <div className="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 className="font-bold text-lg mb-4">DEMLITE SITES</h3>
+            <p className="text-muted-foreground text-sm">
+              Создавайте и публикуйте сайты без навыков программирования. Бесплатно и без ограничений.
+            </p>
           </div>
-          <p className="text-muted-foreground">
-            Бесплатный генератор веб-сайтов с искусственным интеллектом.
-          </p>
+          
+          <div>
+            <h3 className="font-bold mb-4">Продукт</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/create" className="text-muted-foreground hover:text-primary transition-colors">
+                  Создать сайт
+                </Link>
+              </li>
+              <li>
+                <Link to="/templates" className="text-muted-foreground hover:text-primary transition-colors">
+                  Шаблоны
+                </Link>
+              </li>
+              <li>
+                <Link to="/hosting" className="text-muted-foreground hover:text-primary transition-colors">
+                  Хостинг
+                </Link>
+              </li>
+              <li>
+                <Link to="/pricing" className="text-muted-foreground hover:text-primary transition-colors">
+                  Тарифы
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-bold mb-4">Компания</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                  О нас
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors">
+                  Блог
+                </Link>
+              </li>
+              <li>
+                <Link to="/docs" className="text-muted-foreground hover:text-primary transition-colors">
+                  Документация
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Контакты
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-bold mb-4">Правовая информация</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">
+                  Условия использования
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+                  Политика конфиденциальности
+                </Link>
+              </li>
+              <li>
+                <Link to="/cookies" className="text-muted-foreground hover:text-primary transition-colors">
+                  Политика куки
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 className="font-medium mb-4">Продукт</h3>
-          <ul className="space-y-2">
-            <li><Link to="/features" className="text-muted-foreground hover:text-foreground">Возможности</Link></li>
-            <li><Link to="/templates" className="text-muted-foreground hover:text-foreground">Шаблоны</Link></li>
-            <li><Link to="/pricing" className="text-muted-foreground hover:text-foreground">Цены</Link></li>
-          </ul>
+        
+        <div className="mt-12 pt-6 border-t text-sm text-muted-foreground flex flex-col md:flex-row justify-between items-center">
+          <p>&copy; {new Date().getFullYear()} DEMLITE SITES. Все права защищены.</p>
+          <div className="mt-4 md:mt-0">
+            Сделано с ❤️ для лучших сайтов
+          </div>
         </div>
-        <div>
-          <h3 className="font-medium mb-4">Компания</h3>
-          <ul className="space-y-2">
-            <li><Link to="/about" className="text-muted-foreground hover:text-foreground">О нас</Link></li>
-            <li><Link to="/blog" className="text-muted-foreground hover:text-foreground">Блог</Link></li>
-            <li><Link to="/contact" className="text-muted-foreground hover:text-foreground">Контакты</Link></li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="font-medium mb-4">Правовая информация</h3>
-          <ul className="space-y-2">
-            <li><Link to="/terms" className="text-muted-foreground hover:text-foreground">Условия использования</Link></li>
-            <li><Link to="/privacy" className="text-muted-foreground hover:text-foreground">Политика конфиденциальности</Link></li>
-          </ul>
-        </div>
-      </div>
-      <div className="container mt-8 pt-8 border-t">
-        <p className="text-center text-muted-foreground">
-          © {new Date().getFullYear()} Poehali.dev. Все права защищены.
-        </p>
       </div>
     </footer>
   );

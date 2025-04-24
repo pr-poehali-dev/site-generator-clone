@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
             <Rocket className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">Poehali.dev</span>
+            <span className="text-xl font-bold">DEMLITE SITES</span>
           </Link>
         </div>
         
@@ -49,8 +49,8 @@ const Navbar = () => {
                   <ListItem href="/templates" title="Шаблоны">
                     Готовые решения для быстрого запуска.
                   </ListItem>
-                  <ListItem href="/pricing" title="Тарифы">
-                    Бесплатно и навсегда без ограничений.
+                  <ListItem href="/hosting" title="Хостинг">
+                    Бесплатный хостинг сайтов с поддоменом demlite.site
                   </ListItem>
                   <ListItem href="/docs" title="Документация">
                     Руководства и инструкции по использованию.
@@ -66,9 +66,9 @@ const Navbar = () => {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/pricing" legacyBehavior passHref>
+              <Link to="/hosting" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Тарифы
+                  Хостинг
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>

@@ -10,8 +10,8 @@ const Hero = () => {
           Создавайте потрясающие сайты <span className="text-primary">бесплатно</span>
         </h1>
         <p className="mx-auto mt-6 max-w-[700px] text-lg text-muted-foreground md:text-xl">
-          Poehali.dev — бесплатный генератор веб-сайтов с искусственным интеллектом. 
-          Создавайте профессиональные сайты за считанные минуты, без навыков программирования.
+          DEMLITE SITES — бесплатный генератор веб-сайтов с искусственным интеллектом. 
+          Создавайте профессиональные сайты за считанные минуты и публикуйте их бесплатно!
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
           <Link to="/create">
