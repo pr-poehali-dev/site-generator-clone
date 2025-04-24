@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Code, Sparkles, MoveRight, Users } from "lucide-react";
+import { ArrowRight, Code, Globe, MoveRight, Rocket, Sparkles, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
